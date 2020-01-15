@@ -1,0 +1,26 @@
+The basic comands to run progroams in th IDE are
+
+if you want you can shift between dark and light mode in view options
+
+In terminal widow first go to the where wordbuilder is located using cd comand
+
+    cd /environment/wordbuilder
+
+To compile a file you need to type make {filename(without extensions)}   ---> this will compile the code if no errors are present
+
+To run a program the comand is
+    ./{filename}
+
+To stop a program while running use --> Ctrl+C
+
+To debug a program if you want put debug points by using curosr by clicking beside the numbers
+After selecting debug points
+The command to debug is
+    debug50 ./{filename}
+
+To check whether there is memory leak use comand
+    valgrind ./{filename}
+    to get simpler view use comand
+    help50 valgrind ./{filename}
+
+To understand what is valgrind follow the link  -->> https://youtu.be/PYJYiBlto5M?t=4019
