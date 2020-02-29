@@ -1,10 +1,13 @@
 
-#include "load.c"
-#include "loadh.c"
-#include "datac.c"
-#include "check.c"
-#include "help.c"
-#include "against.c"
+#include "functions/playerClass.cpp"
+#include "functions/load.c"
+#include "functions/loadh.c"
+#include "functions/datac.c"
+#include "functions/check.c"
+#include "functions/help.c"
+#include "functions/against.c"
+#include "functions/design.cpp"
+
 
 
 
@@ -14,70 +17,12 @@
 #include<stdlib.h>
 
 
-#define wordn "files/words_alpha.txt"
-#define wordc "files/india.txt"
+#define wordn "words/words_alpha.txt"
+#define wordc "words/india.txt"
 
 using namespace std;
 
 
-class player
-{
- char name[32];
- int helps;
- int score;
- int mul;
- public:
- int errors;
-   player()
-   {
-      cout<<"Enter name of player: ";
-      cin>>name;
-      errors=3;
-      helps=50;
-      score=0;
-      mul=0;
-   }
-   player(char a)
-   {
-     
-      strcpy(name,"Computer");
-      errors=3;
-      helps=5;
-      score=0;
-      mul=0;
-   }
-   player(int x)
-   {};
-   int decerror()
-   {
-      errors--;
-      return errors;
-   }
-   char *dispname()
-   {
-      return name;
-   }
-   int dechelp()
-   {
-      helps--;
-      return helps;
-   }
-   void addscore(int x)
-   {
-      mul++;
-      score=score+(x*mul);
-   }
-   int getscore()
-   {
-    return score;
-   }
-   void inchelp()
-   {
-      helps++;
-   }
-
-};
-#include "design.cpp"
 int main()
 {
      int number,count,len,de,mode,limit,ch,men,level,tp=1;
