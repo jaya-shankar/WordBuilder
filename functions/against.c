@@ -4,6 +4,7 @@
 #include<time.h>
 
 // hello world
+// good world
 typedef struct coans
 {
     char nex;
