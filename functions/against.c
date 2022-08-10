@@ -3,6 +3,7 @@
 #include<stdbool.h>
 #include<time.h>
 
+// hello world
 typedef struct coans
 {
     char nex;
